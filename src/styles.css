@@ -1,0 +1,316 @@
+body {
+    font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto;
+    background-image: linear-gradient(90deg, powderblue, pink 100%);
+  }
+  
+  #main {
+    width: 600px;
+    min-height: 600px;
+    margin: 140px auto;
+    background: rgb(236, 236, 236);
+    box-sizing: border-box;
+    padding-top: 10px;
+    padding-bottom: 40px;
+  }
+  
+  #main h1 {
+    text-align: center;
+    font-size: 50px;
+    font-weight: 300;
+    color: rgb(63, 206, 146);
+    margin-bottom: 5%;
+  }
+  
+  #main h2 {
+    text-align: right;
+    font-weight: 300;
+    margin-right: 3em;
+    margin-bottom: 0;
+  }
+  
+  #main h3 {
+    position: relative;
+    text-align: center;
+    font-weight: 500;
+    margin: 0 0 5% 0;
+    color: #505050;
+  }
+  
+  #addInput {
+    font-family: inherit;
+    margin: 4% 10%;
+    width: 70%;
+    height: 40px;
+    border-radius: 5px;
+    border: 1px solid lightgray;
+    padding-left: 25px;
+    box-sizing: border-box;
+    font-size: 25px;
+    outline: none;
+  }
+  
+  #searchInput {
+    font-family: inherit;
+    margin: 2% 1% 12% 10%;
+    width: 49%;
+    height: 40px;
+    border-radius: 5px;
+    border: 1px solid lightgray;
+    padding-left: 25px;
+    box-sizing: border-box;
+    font-size: 25px;
+    outline: none;
+  }
+  
+  .editInput {
+    background: #ffbd2e;
+    font-family: inherit;
+    margin: 3.4% 1% 3.4% 0;
+    width: 100%;
+    height: 40px;
+    border: none;
+    box-sizing: border-box;
+    font-size: 25px;
+    outline: none;
+    opacity: 0.7;
+    border-radius: 5px;
+  }
+  
+  #addButton {
+    border: none;
+    color: white;
+    text-align: center;
+    font-size: 20px;
+    font-family: inherit;
+    border-radius: 5px;
+    background: rgb(63, 206, 146);
+    width: 60px;
+    height: 40px;
+    position: relative;
+    left: -56px;
+    top: -2px;
+    cursor: pointer;
+    outline: none;
+  }
+  
+  #addButton:active {
+    transition: 0.5s;
+    box-shadow: none;
+    transform: scale(0.95);
+  }
+  
+  ul {
+    margin-left: 4%;
+    margin-top: -4%;
+  }
+  
+  li {
+    display: flex;
+    padding-left: 20px;
+    padding-top: 15px;
+    list-style: none;
+    max-width: 88%;
+    min-height: 70px;
+    background: white;
+    font-size: 25px;
+    line-height: 70px;
+    box-sizing: border-box;
+    border-left: 5px solid rgb(63, 206, 146);
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 4%;
+    overflow: scroll;
+    border-radius: 5px;
+  }
+  
+  li:hover {
+    position: relative;
+    top: -3px;
+    transform: scale(1.02);
+    cursor: pointer;
+    box-shadow: 6px 7px 18px -5px rgba(77, 77, 77, 1);
+    transition: 0.3s;
+  }
+  
+  .checkButton {
+    background: rgb(63, 206, 146);
+  }
+  
+  .editButton {
+    background: #ffbd2e;
+  }
+  
+  .deleteButton {
+    background: #ff5f57;
+  }
+  
+  .optionButton {
+    border: 1px solid white;
+    min-width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    outline: none;
+    margin-left: 3px;
+    opacity: 0.8;
+  }
+  
+  .optionButton:hover {
+    cursor: pointer;
+    opacity: 1;
+  }
+  
+  .optionButtons {
+    margin-top: -65px;
+    white-space: nowrap;
+  }
+  
+  footer {
+    position: relative;
+    bottom: -40px;
+    margin-bottom: 0;
+  }
+  
+  ::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    border-radius: 5px;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: rgb(63, 206, 146);
+    border-radius: 5px;
+  }
+  
+  ::-webkit-scrollbar-corner {
+    background: inherit;
+    border-radius: inherit;
+  }
+  
+  .container {
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+    font-size: 20px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  
+  .container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+  
+  .checkmark {
+    position: relative;
+    height: 25px;
+    width: 25px;
+    background-color: white;
+    margin-left: -2px;
+    padding: 6px 8px 6px 8px;
+    border: 2px solid rgb(63, 206, 146);
+  }
+  
+  .container input:checked ~ .checkmark {
+    background-color: rgb(63, 206, 146);
+    color: white;
+  }
+  
+  #allButton {
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+  }
+  
+  #doneButton {
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+  }
+  
+  .doneItem {
+    background: rgb(63, 206, 146);
+    color: white;
+    text-decoration: line-through;
+  }
+  
+  ::-webkit-scrollbar-corner {
+    background: inherit;
+  }
+  
+  #addInputJson {
+    font-family: inherit;
+    margin: 3% 10%;
+    width: 20%;
+    height: 40px;
+    border-radius: 5px;
+    border: 1px solid lightgray;
+    padding-left: 20px;
+    box-sizing: border-box;
+    font-size: 25px;
+    outline: none;
+    text-align: center;
+  }
+  
+  #addButtonJson {
+    border: none;
+    color: white;
+    text-align: center;
+    padding: 0;
+    font-size: 20px;
+    font-family: inherit;
+    border-radius: 5px;
+    background: #ff5f57;
+    width: 360px;
+    height: 40px;
+    position: relative;
+    left: -56px;
+    top: -2px;
+    cursor: pointer;
+    outline: none;
+  }
+  
+  #addButtonJson:active {
+    transition: 0.5s;
+    box-shadow: none;
+    transform: scale(0.98);
+  }
+  
+  .lds-ring {
+    display: inline-block;
+    position: relative;
+    width: 80px;
+    height: 80px;
+  }
+  .lds-ring div {
+    box-sizing: border-box;
+    display: block;
+    position: absolute;
+    width: 64px;
+    height: 64px;
+    border: 8px solid rgb(63, 206, 146);
+    border-radius: 50%;
+    animation: lds-ring 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+    border-color: rgb(63, 206, 146) transparent transparent transparent;
+  }
+  .lds-ring div:nth-child(1) {
+    animation-delay: -0.45s;
+  }
+  .lds-ring div:nth-child(2) {
+    animation-delay: -0.3s;
+  }
+  .lds-ring div:nth-child(3) {
+    animation-delay: -0.15s;
+  }
+  @keyframes lds-ring {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }  
